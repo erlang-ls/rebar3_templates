@@ -1,0 +1,5 @@
+{description, "A gen_server template"}.
+{variables, []}.
+
+{dir, "src"}.
+{template, "els_gen_server.erl", "src/els_{{name}}_server.erl"}.
