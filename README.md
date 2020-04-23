@@ -14,6 +14,14 @@ To get the list of available templates:
 
     rebar3 new
 
+To see the available variables and respective default values:
+
+    rebar3 new help TEMPLATE
+
+To create a new instance of the template:
+
+    rebar3 mew els_gen_server NAME
+
 For more information about `rebar3` templates:
 
 https://www.rebar3.org/docs/using-templates

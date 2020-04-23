@@ -1,14 +1,14 @@
 %%%=============================================================================
-%%% @doc The @@name@@ gen_server.
+%%% @doc The {{name}} gen_server.
 %%% @end
 %%%=============================================================================
 
--module(els_@@name@@).
+-module(els_{{name}}_server).
 
 %%==============================================================================
 %% API
 %%==============================================================================
--export([ start_link/1
+-export([ start_link/0
         ]).
 
 %%==============================================================================
@@ -37,9 +37,8 @@ start_link() ->
 %%==============================================================================
 %% Callbacks for the gen_server behaviour
 %%==============================================================================
--spec init() ->
-        {ok, state()}.
-init() ->
+-spec init(unused) -> {ok, state()}.
+init(unused) ->
   {ok, #{}}.
 
 -spec handle_call(any(), {pid(), any()}, state()) ->
@@ -53,5 +52,5 @@ handle_cast(_Request, State) ->
   {noreply, State}.
 
 -spec handle_info(any(), state()) -> {noreply, state()}.
-handle_info(Request, State) ->
+handle_info(_Request, State) ->
   {noreply, State}.

@@ -1,5 +1,6 @@
 {description, "A gen_server template for Erlang LS"}.
-{variables, []}.
+{variables, [ {name, "unnamed", "Name for the generic server"}
+            ]}.
 
 {dir, "src"}.
 {template, "els_gen_server.erl", "src/els_{{name}}_server.erl"}.
