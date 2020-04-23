@@ -1,4 +1,4 @@
-{description, "A gen_server template"}.
+{description, "A gen_server template for Erlang LS"}.
 {variables, []}.
 
 {dir, "src"}.
